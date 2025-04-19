@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find your dream job</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Audiowide&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4606651876.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span>Jobs 4 u</span>
+        </div>
+        <div>
+            <a href="#landing" title="home"><i class="fa-solid fa-igloo"></i></a>
+
+        </div>
+    </header>
+    <!-- ------------------main--------------- -->
+    <main>
+        <div id="landing" class="mainDiv">
+            <div class="welcome">
+                <h1>Find your dream job with us!</h1><br>
+                <h2>A worldwide network used by thousends of users</h2>
+            </div>
+            <button id="getStarted" type="button"><a href="#allJobs">Get started</a></button>
+        </div>
+
+        <!-- get started mi porta qui -->
+        <div id="allJobs" class="mainDiv">
+            <h2>
+                Here's a list of all of our current available positions
+            </h2>
+            <div style="display: flex;">
+                <div class="filters">
+                    <span>Filters:</span>
+                </div>
+                <div class="filterButtons">
+                    <label for="jobTitle" class="filterLables">job's title</button> <input type="text" id="jobTitle" placeholder="  job's title"><br>
+                    <label for="location" class="filterLables">location</button> <input type="text" id="jobLocation" placeholder="  location"><br>
+                </div>
+                <div class="filters">
+                    <button onclick="searchJobs()" title="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button onclick="clearFields()" title="clear"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+            
+            <div class="divTable">
+                <table id="allJobTable">
+                    <th>Job's title</th>
+                    <th>Locaction</th>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="/javascript.js"></script>
+</body>
+</html>
