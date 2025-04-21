@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     color: rgb(49, 20, 64);
+    
 }
 
 html {
@@ -15,6 +16,7 @@ body {
     background: linear-gradient(148deg, rgba(63, 94, 251, 1) 0%, rgba(182, 70, 252, 1) 92%);
     width: 80%;
     margin: auto;
+    font-family: "Karla", sans-serif;
 }
 .logo{
     font-family:  "Audiowide", sans-serif;
@@ -47,18 +49,19 @@ main {
 .welcome {
     width: 40%;
     text-align: right;
-    
 }
 h1 {
     font-family:  "Audiowide", sans-serif;
     font-size: 40px;
 }
 #landing h2 {
-    font-size: 20px;
+    font-size: 25px;
+    font-family: "Alumni Sans", sans-serif;
 }
 
 
-button {
+
+button, .getStarted{
     font-family: "Karla", sans-serif;
     font-size: 18px;
     margin-left: 30px;
@@ -68,7 +71,7 @@ button {
     border: none;   
 }
 
-button:hover {
+button:hover, .getStarted:hover {
     background-color: blueviolet;
     color: #c5abfe;
     cursor: pointer;
@@ -123,14 +126,14 @@ table {
     width: 100%;
     margin-top: 1em;
     font-size: 20px;
-    position: relative;
     border-collapse: collapse;
 }
 th, td {
     padding: 0.5em;
     text-align: right;
     border-bottom: 1px solid purple;
-    
+    font-family:  "Space Mono", monospace;
+    font-weight: 400;
 }
 
 tr:hover {
@@ -151,7 +154,41 @@ a {
     text-decoration: none;
 }
 
-.divTable {
+#divTable {
     height: 55vh;
     overflow: scroll;
+    width: 100%;
 }
+
+#overlay {
+    display: flex;
+    width: 90%;
+    height: 55vh;
+    margin: auto;
+    background-color: rgba(74, 43, 90, 0.324);
+    justify-content: center;    
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.overlayContent {
+    width: 50%;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.417);
+    border-radius: 20px;
+    padding: 2em;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+}
+
+.overlayContent span {
+    font-family: "Space Mono", monospace;
+    font-style: italic;
+}
+.overlayContent:first-child p {
+    font-size: 30px;
+}
+
